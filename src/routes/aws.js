@@ -5,6 +5,7 @@ aws.config.update({
     secretAccessKey: "9f+YFBVcSjZWM6DG9R4TUN8k8TGe4X+lXmO4jPiU",
     region: "ap-south-1"
 })
+
 let uploadFile = async (file) => {
     try {
         return new Promise(function (resolve, reject) {
@@ -24,6 +25,7 @@ let uploadFile = async (file) => {
             })
         })
     }
+
     catch (error) {
         console.log(error)
         res.status(500).send({ status: false, message: error.message })

@@ -290,7 +290,7 @@ Order Model
   totalItems: {number, mandatory, comment: "Holds total number of items in the cart"},
   totalQuantity: {number, mandatory, comment: "Holds total number of quantity in the cart"},
   cancellable: {boolean, default: true},
-  status: {string, default: 'pending', enum[pending, completed, canceled]},
+  status: {string, default: 'pending', enum[pending, completed, cancelled]},
   deletedAt: {Date, when the document is deleted}, 
   isDeleted: {boolean, default: false},
   createdAt: {timestamp},

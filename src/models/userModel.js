@@ -4,70 +4,70 @@ const userSchema = new mongoose.Schema({
     fname: {
         type: String,
         required: true,
-        trim:true
+        trim: true
     },
     lname: {
         type: String,
         required: true,
-        trim:true
+        trim: true
     },
     email: {
         type: String,
-        required: true,    //valid
+        required: true,
         unique: true,
-        trim:true
+        trim: true
     },
     profileImage: {
         type: String,
         required: true,
-        trim:true
+        trim: true
     },
     phone: {
         type: String,
         required: true,
         unique: true,
-        trim:true       //valid
+        trim: true
     },
     password: {
         type: String,
         required: true,
         minLen: 8,
         maxLen: 15,
-        trim:true            //hashing
+        trim: true
     },
     address: {
         shipping: {
             street: {
                 type: String,
                 required: true,
-                trim:true
+                trim: true
             },
             city: {
                 type: String,
                 required: true,
-                trim:true
+                trim: true
             },
             pincode: {
                 type: Number,
                 required: true,
-                trim:true
+                trim: true
             }
         },
         billing: {
             street: {
                 type: String,
                 required: true,
-                 trim:true
+                trim: true
             },
             city: {
                 type: String,
                 required: true,
-                trim:true
+                trim: true
             },
             pincode: {
-                type: String,
+                type: Number,
                 required: true,
-                trim:true
+                trim: true
             }
         }
     }
